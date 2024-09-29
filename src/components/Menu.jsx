@@ -72,44 +72,49 @@ const Menu = ({ onClose }) => {
                 >
                     &times; {/* Close button using an '×' symbol */}
                 </button>
-                <ul className="mt-4 flex flex-col items-start space-y-4">
-                    {['Home', 'About Us', 'People', 'Campus Life', 'Academics', 'Alumni', 'Login'].map((item, index) => (
-                        <li 
-                            key={index} 
-                            className={`py-4 flex items-center text-3xl relative tracking-wider transition-all duration-200 ${selectedItem === item ? 'text-yellow-400 font-bold' : 'text-gray-300 hover:text-white'}`} // Reduce font size and adjust spacing
-                            onClick={() => handleMenuClick(item)} // Call handleMenuClick when item is clicked
-                        >
-                            <i className={`fa fa-${item.toLowerCase().replace(' ', '-')}-circle mr-4`} aria-hidden="true"></i>
-                            <a 
-                                href="#" 
-                                className="relative group"
-                            >
-                                {item}
-                                <span className="block h-0.5 bg-yellow-400 w-full transition-transform duration-300 scale-x-0 group-hover:scale-x-100 absolute bottom-0 left-0"></span> {/* Classy underline hover */}
-                            </a>
-                        </li>
-                    ))}
-                </ul>
 
-                {/* Render submenu for selected items */}
-                {['About Us', 'People', 'Campus Life', 'Academics'].includes(selectedItem) && (
-                    <ul className="absolute right-10 top-20 flex flex-col items-start text-right space-y-2">
-                        {getSubMenuItems(selectedItem).map((subItem, subIndex) => (
+                {/* Flex container to hold main menu and submenu */}
+                <div className="flex flex-grow">
+                    {/* Main menu column */}
+                    <ul className="w-1/2 flex flex-col items-start space-y-4 pr-10 border-r border-gray-700">
+                        {['Home', 'About Us', 'People', 'Campus Life', 'Academics', 'Alumni', 'Login'].map((item, index) => (
                             <li 
-                                key={subIndex} 
-                                className="py-1 text-lg text-gray-300 hover:text-white font-medium tracking-wider"
+                                key={index} 
+                                className={`py-4 flex items-center text-3xl relative tracking-wider transition-all duration-200 ${selectedItem === item ? 'text-yellow-400 font-bold' : 'text-gray-300 hover:text-white'}`} 
+                                onClick={() => handleMenuClick(item)} // Call handleMenuClick when item is clicked
                             >
-                                <i className="fa fa-angle-right mr-2"></i>
+                                <i className={`fa fa-${item.toLowerCase().replace(' ', '-')}-circle mr-4`} aria-hidden="true"></i>
                                 <a 
                                     href="#" 
-                                    className="hover:text-gray-100 transition duration-200 relative group"
+                                    className="relative group"
                                 >
-                                    {subItem}
+                                    {item}
+                                    <span className="block h-0.5 bg-yellow-400 w-full transition-transform duration-300 scale-x-0 group-hover:scale-x-100 absolute bottom-0 left-0"></span>
                                 </a>
                             </li>
                         ))}
                     </ul>
-                )}
+
+                    {/* Submenu column */}
+                    {['About Us', 'People', 'Campus Life', 'Academics'].includes(selectedItem) && (
+                        <ul className="w-1/2 flex flex-col items-start text-left space-y-2 pl-10">
+                            {getSubMenuItems(selectedItem).map((subItem, subIndex) => (
+                                <li 
+                                    key={subIndex} 
+                                    className="py-1 text-lg text-gray-300 hover:text-white font-medium tracking-wider"
+                                >
+                                    <i className="fa fa-angle-right mr-2"></i>
+                                    <a 
+                                        href="#" 
+                                        className="hover:text-gray-100 transition duration-200 relative group"
+                                    >
+                                        {subItem}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+                </div>
             </div>
         </div>
     );
