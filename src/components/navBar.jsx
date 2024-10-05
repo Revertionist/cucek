@@ -5,7 +5,7 @@ const NavBar = () => {
     const [isMenuVisible, setMenuVisible] = useState(false);
     
     return (
-        <nav className="mx-3 mt-3 block w-full px-4 py-2 bg-white shadow-md rounded-md lg:px-8 lg:py-3">
+        <nav className="mx-3 mt-1 block w-full px-4 py-2 bg-white shadow-md rounded-md lg:px-8 lg:py-3">
             <div className="container flex flex-wrap items-center justify-between text-slate-800">
                 <a href="#" className="mr-4 block cursor-pointer py-1.5 text-base text-slate-800 font-semibold">
                     <img className='w-16' src="logo.png" alt="Logo" />

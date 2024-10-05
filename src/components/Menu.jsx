@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Menu = ({ onClose }) => {
     const [bgImage, setBgImage] = useState(''); // State to hold the background image
     const [selectedItem, setSelectedItem] = useState(''); // State to track selected menu item
+    const navigate = useNavigate()
 
     const handleMenuClick = (item) => {
         setSelectedItem(item); // Set the selected item
@@ -11,6 +13,7 @@ const Menu = ({ onClose }) => {
         switch (item) {
             case 'Home':
                 setBgImage('');
+                navigate('/');
                 break;
             case 'About Us':
                 setBgImage('aboutus.jpeg');
