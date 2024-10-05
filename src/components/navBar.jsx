@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Menu from './menu';
+import Menu from './Menu';
 
 const NavBar = () => {
     const [isMenuVisible, setMenuVisible] = useState(false);
