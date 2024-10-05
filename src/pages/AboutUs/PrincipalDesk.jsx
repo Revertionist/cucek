@@ -11,11 +11,11 @@ const PrincipalDesk = () => {
                 backgroundRepeat: "no-repeat", // Prevents the background from repeating
             }}
         >
-            <div className="max-w-lg rounded-lg shadow-lg bg-white overflow-hidden">
+            <div className="rounded-lg shadow-lg bg-white overflow-hidden">
                 <div className="flex justify-center items-center">
-
+                    
                     <img
-                        className="h-64 justify-center w-auto"
+                        className="h-64 justify-center w-auto pt-2"
                         src="principal.jpg" // Replace with the actual image source
                         alt="Principal"
                     />
