@@ -2,7 +2,8 @@ import NavBar from "./components/navBar";
 import 'font-awesome/css/font-awesome.min.css';
 import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
-import PrincipalDesk from "./pages/PrincipalDesk";
+import PrincipalDesk from "./pages/AboutUs/PrincipalDesk";
+import VisionAndMission from "./pages/AboutUs/VisionAndMission";
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/principal" element={<PrincipalDesk />} />
-      </Routes>
+        <Route path="/vision-and-mission" element={<VisionAndMission />} />
+      </ Routes>
     </div>
 
   );
