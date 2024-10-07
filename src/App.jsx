@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import PrincipalDesk from "./pages/AboutUs/PrincipalDesk";
 import VisionAndMission from "./pages/AboutUs/VisionAndMission";
+import Cs from "./pages/Academic/Cs";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/principal" element={<PrincipalDesk />} />
         <Route path="/vision-and-mission" element={<VisionAndMission />} />
+        <Route path="/cs" element={<Cs/>} />
       </ Routes>
     </div>
 
