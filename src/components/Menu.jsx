@@ -52,7 +52,7 @@ const Menu = ({ onClose }) => {
                     'Arts and Sports', 'Library', 'NSS Cell', 'Placement Cell', 'PTA', 'Gender Justice Committee'
                 ];
             case 'Academics':
-                return ['B.Tech', 'MCA', 'Research', 'Online Courses'];
+                return ['CSE','CE','EEE','IT','ME', 'MCA', 'Research', 'Online Courses'];
             default:
                 return [];
         }
