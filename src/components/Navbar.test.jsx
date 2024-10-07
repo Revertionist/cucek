@@ -42,5 +42,16 @@ describe('NavBar Component', () => {
     expect(screen.getByText('Menu Component')).toBeInTheDocument();
   });
 
+  // it('should call a function when a menu item is clicked', () => {
+  //   const handleClick = vi.fn(); // Create a mock function
+  //   render(<NavBar onMenuItemClick={handleClick} />); // Pass the mock function as a prop
+    
+  //   fireEvent.click(screen.getByRole('button')); // Open the menu
+  //   fireEvent.click(screen.getByText('Menu Component')); // Click the menu item
 
+  //   // Check if the mock function was called
+  //   expect(handleClick).toHaveBeenCalled();
+  // });
+
+  // Uncomment the above one after implementing the entire navigation
 });
