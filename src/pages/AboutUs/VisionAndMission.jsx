@@ -1,24 +1,23 @@
 import React from 'react';
 
 const VisionAndMission = () => {
-
-
     return (
         <div
             className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-8 mt-[92px]"
             style={{
                 backgroundImage: "url(cucek_bg.jpg)",
                 backgroundPosition: "top",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover", // Stretches the background to cover the entire screen
+                backgroundRepeat: "no-repeat", // Prevents the background from repeating
             }}
         >
-            <div className="absolute inset-0 bg-black opacity-50"></div>
 
-            <div className="relative z-10 max-w-3xl w-full bg-white bg-opacity-90 rounded-lg shadow-2xl overflow-hidden transition-transform transform hover:scale-105">
+            {/* Content Container */}
+            <div className="relative max-w-3xl w-full bg-white bg-opacity-90 rounded-lg shadow-2xl overflow-hidden transition-transform transform hover:scale-105">
                 <div className="p-8">
                     <h1 className="text-4xl font-extrabold text-center text-gray-800 mb-6">Our Vision & Mission</h1>
 
+                    {/* Vision Section */}
                     <div className="mb-8">
                         <h2 className="text-2xl font-bold text-indigo-700 mb-4 flex items-center">
                             <svg className="w-6 h-6 mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -31,6 +30,7 @@ const VisionAndMission = () => {
                         </p>
                     </div>
 
+                    {/* Mission Section */}
                     <div>
                         <h2 className="text-2xl font-bold text-indigo-700 mb-4 flex items-center">
                             <svg className="w-6 h-6 mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -55,6 +55,11 @@ const VisionAndMission = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Optional Footer */}
+            <footer className="absolute bottom-4 text-white">
+                &copy; {new Date().getFullYear()} Your Institution Name. All rights reserved.
+            </footer>
         </div>
     );
 };
