@@ -6,9 +6,9 @@ import PrincipalDesk from "./pages/AboutUs/PrincipalDesk";
 import VisionAndMission from "./pages/AboutUs/VisionAndMission";
 import Cs from "./pages/Academic/Cs";
 import Ce from "./pages/Academic/Ce";
-import Ece from "./pages/Academic/ece";
-import It from "./pages/Academic/it";
-import Mca from "./pages/Academic/mca";
+import Ece from "./pages/Academic/Ece";
+import It from "./pages/Academic/It";
+import Mca from "./pages/Academic/Mca";
 
 function App() {
 
