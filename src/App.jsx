@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-cover bg-center flex flex-col relative overlay-container inset-0 bg-slate-400 bg-opacity-80">
-      <header className="w-full flex justify-between items-center fixed">
+      <header className="z-10 w-full flex justify-between items-center fixed">
         <NavBar />
       </header>
       <Routes>
