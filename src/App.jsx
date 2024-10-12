@@ -9,6 +9,8 @@ import Ce from "./pages/Academic/Ce";
 import Ece from "./pages/Academic/Ece";
 import It from "./pages/Academic/It";
 import Mca from "./pages/Academic/Mca";
+import ResearchPage from "./pages/Academic/research";
+import ResearcherDetails from "./pages/Academic/ReasearchDetails";
 
 function App() {
 
@@ -26,6 +28,8 @@ function App() {
         <Route path="/ece" element={<Ece />} />
         <Route path="/it" element={<It />} />
         <Route path="/mca" element={<Mca/>}/>
+        <Route path="/research" element={<ResearchPage/>} />
+        <Route path="/researcher/:id" element={<ResearcherDetails/>} />
       </ Routes>
     </div>
 
