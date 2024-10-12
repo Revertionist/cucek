@@ -7,6 +7,8 @@ import VisionAndMission from "./pages/AboutUs/VisionAndMission";
 import Cs from "./pages/Academic/Cs";
 import Ce from "./pages/Academic/Ce";
 import Ece from "./pages/Academic/ece";
+import It from "./pages/Academic/it";
+import Mca from "./pages/Academic/mca";
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
         <Route path="/cs" element={<Cs/>} />
         <Route path="/ce" element={<Ce/>}/>
         <Route path="/ece" element={<Ece />} />
+        <Route path="/it" element={<It />} />
+        <Route path="/mca" element={<Mca/>}/>
       </ Routes>
     </div>
 
