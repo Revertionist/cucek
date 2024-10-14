@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import PrincipalDesk from "./pages/AboutUs/PrincipalDesk";
 import VisionAndMission from "./pages/AboutUs/VisionAndMission";
+import AboutUsContents from "./pages/AboutUs/AboutUsContents";
 import Cs from "./pages/Academic/Cs";
 import Ce from "./pages/Academic/Ce";
 import Ece from "./pages/Academic/Ece";
@@ -24,14 +25,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/principal" element={<PrincipalDesk />} />
         <Route path="/vision-and-mission" element={<VisionAndMission />} />
-        <Route path="/cs" element={<Cs/>} />
-        <Route path="/ce" element={<Ce/>}/>
-        <Route path="/ece" element={<Ece />} />
-        <Route path="/it" element={<It />} />
-        <Route path="/mca" element={<Mca/>}/>
-        <Route path="/research" element={<ResearchPage/>} />
-        <Route path="/researcher/:id" element={<ResearcherDetails/>} />
-
+        <Route path="/aboutUs" element={<AboutUsContents/>} />
+        <Route path="/academics/cs" element={<Cs/>} />
+        <Route path="/academics/ce" element={<Ce/>}/>
+        <Route path="/academics/ece" element={<Ece />} />
+        <Route path="/academics/it" element={<It />} />
+        <Route path="/academics/mca" element={<Mca/>}/>
       </ Routes>
     </div>
 
