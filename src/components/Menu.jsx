@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Menu = ({ onClose }) => {
     const [bgImage, setBgImage] = useState(''); // State to hold the background image
     const [selectedItem, setSelectedItem] = useState(''); // State to track selected menu item
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     const handleMenuClick = (item) => {
         setSelectedItem(item); // Set the selected item
@@ -17,21 +17,27 @@ const Menu = ({ onClose }) => {
                 break;
             case 'About Us':
                 setBgImage('aboutus.jpeg');
+                navigate('/about-us'); // Change the route for About Us
                 break;
             case 'People':
                 setBgImage('people.jpg');
+                navigate('/people'); // Change the route for People
                 break;
             case 'Campus Life':
                 setBgImage('campuslife.jpeg');
+                navigate('/campus-life'); // Change the route for Campus Life
                 break;
             case 'Login':
                 setBgImage(''); // Set a black background (no image) for Login
+                navigate('/login'); // Change the route for Login
                 break;
             case 'Academics':
                 setBgImage('academics.jpeg');
+                navigate('/academics'); // Change the route for Academics
                 break;
             case 'Alumni':
-                setBgImage('alumini.jpg'); // No specific image for Alumni (you can update it with an image if needed)
+                setBgImage('alumini.jpg'); // Change the route for Alumni
+                navigate('/alumni');
                 break;
             default:
                 setBgImage('');
@@ -43,16 +49,42 @@ const Menu = ({ onClose }) => {
     const getSubMenuItems = (item) => {
         switch (item) {
             case 'About Us':
-                return ['College Principal\'s Desk', 'Vision and Mission', 'Contact Us', 'Administration', 'About this college'];
+                return [
+                    { name: "College Principal's Desk", path: '/about-us/principal' },
+                    { name: 'Vision and Mission', path: '/about-us/vision' },
+                    { name: 'Contact Us', path: '/about-us/contact' },
+                    { name: 'Administration', path: '/about-us/administration' },
+                    { name: 'About this college', path: '/about-us/info' }
+                ];
             case 'People':
-                return ['Faculty', 'Non-Teaching Staff'];
+                return [
+                    { name: 'Faculty', path: '/people/faculty' },
+                    { name: 'Non-Teaching Staff', path: '/people/non-teaching' }
+                ];
             case 'Campus Life':
                 return [
-                    'Hostels', 'Anti Ragging Cell', 'Grievance Redressal Cells', 'Co-Teaching Committees',
-                    'Arts and Sports', 'Library', 'NSS Cell', 'Placement Cell', 'PTA', 'Gender Justice Committee'
+                    { name: 'Hostels', path: '/campus-life/hostels' },
+                    { name: 'Anti Ragging Cell', path: '/campus-life/anti-ragging' },
+                    { name: 'Grievance Redressal Cells', path: '/campus-life/grievance' },
+                    { name: 'Co-Teaching Committees', path: '/campus-life/co-teaching' },
+                    { name: 'Arts and Sports', path: '/campus-life/arts-sports' },
+                    { name: 'Library', path: '/campus-life/library' },
+                    { name: 'NSS Cell', path: '/campus-life/nss' },
+                    { name: 'Placement Cell', path: '/campus-life/placement' },
+                    { name: 'PTA', path: '/campus-life/pta' },
+                    { name: 'Gender Justice Committee', path: '/campus-life/gender-justice' }
                 ];
             case 'Academics':
-                return ['CSE','CE','EEE','IT','ME', 'MCA', 'Research', 'Online Courses'];
+                return [
+                    { name: 'CSE', path: '/academics/cse' },
+                    { name: 'CE', path: '/academics/ce' },
+                    { name: 'EEE', path: '/academics/eee' },
+                    { name: 'IT', path: '/academics/it' },
+                    { name: 'ME', path: '/academics/me' },
+                    { name: 'MCA', path: '/academics/mca' },
+                    { name: 'Research', path: '/academics/research' },
+                    { name: 'Online Courses', path: '/academics/online-courses' }
+                ];
             default:
                 return [];
         }
@@ -87,13 +119,13 @@ const Menu = ({ onClose }) => {
                                 onClick={() => handleMenuClick(item)} // Call handleMenuClick when item is clicked
                             >
                                 <i className={`fa fa-${item.toLowerCase().replace(' ', '-')}-circle mr-4`} aria-hidden="true"></i>
-                                <a 
-                                    href="#" 
+                                <Link 
+                                    to="#" // Dummy link for style
                                     className="relative group"
                                 >
                                     {item}
                                     <span className="block h-0.5 bg-yellow-400 w-full transition-transform duration-300 scale-x-0 group-hover:scale-x-100 absolute bottom-0 left-0"></span>
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
@@ -107,12 +139,13 @@ const Menu = ({ onClose }) => {
                                     className="py-1 text-lg text-gray-300 hover:text-white font-medium tracking-wider"
                                 >
                                     <i className="fa fa-angle-right mr-2"></i>
-                                    <a 
-                                        href="#" 
+                                    <Link 
+                                        to={subItem.path} // Link to the corresponding route
                                         className="hover:text-gray-100 transition duration-200 relative group"
+                                        onClick={onClose} // Close the menu when a submenu is clicked
                                     >
-                                        {subItem}
-                                    </a>
+                                        {subItem.name}
+                                    </Link>
                                 </li>
                             ))}
                         </ul>

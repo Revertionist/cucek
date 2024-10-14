@@ -14,9 +14,10 @@ import ResearcherDetails from "./pages/Academic/ReasearchDetails";
 
 function App() {
 
+
   return (
-    <div className="min-h-screen bg-cover bg-center flex flex-col relative overlay-container inset-0 bg-slate-400 bg-opacity-80 z-0">
-      <header className="w-full flex justify-between items-center z-10 fixed">
+    <div className="min-h-screen bg-cover bg-center flex flex-col relative overlay-container inset-0 bg-slate-400 bg-opacity-80">
+      <header className="z-50 w-full flex justify-between items-center fixed">
         <NavBar />
       </header>
       <Routes>
@@ -30,6 +31,7 @@ function App() {
         <Route path="/mca" element={<Mca/>}/>
         <Route path="/research" element={<ResearchPage/>} />
         <Route path="/researcher/:id" element={<ResearcherDetails/>} />
+
       </ Routes>
     </div>
 
