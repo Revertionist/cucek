@@ -25,12 +25,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/principal" element={<PrincipalDesk />} />
         <Route path="/vision-and-mission" element={<VisionAndMission />} />
-        <Route path="/aboutUs" element={<AboutUsContents/>} />
+        <Route path="/about-us" element={<AboutUsContents/>} />
         <Route path="/academics/cs" element={<Cs/>} />
         <Route path="/academics/ce" element={<Ce/>}/>
         <Route path="/academics/ece" element={<Ece />} />
         <Route path="/academics/it" element={<It />} />
         <Route path="/academics/mca" element={<Mca/>}/>
+        <Route path="/research" element={<ResearchPage/>} />
+        <Route path="/researcher/:id" element={<ResearcherDetails/>} />
       </ Routes>
     </div>
 

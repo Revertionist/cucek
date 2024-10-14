@@ -76,7 +76,7 @@ const Menu = ({ onClose }) => {
                 ];
             case 'Academics':
                 return [
-                    { name: 'CSE', path: '/academics/cse' },
+                    { name: 'CSE', path: '/academics/cs' },
                     { name: 'CE', path: '/academics/ce' },
                     { name: 'EEE', path: '/academics/eee' },
                     { name: 'IT', path: '/academics/it' },
