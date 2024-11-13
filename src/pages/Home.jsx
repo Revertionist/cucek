@@ -22,7 +22,7 @@ const Home = () => {
             <div className="w-[80%] lg:w-[50%] z-10">
                 <TypeAnimation
                     sequence={[
-                        'May the wisdom aquired define us both the teacher and the taught and percolate to the Universe in its totality',
+                        'May the wisdom aquired, define us both the teacher and the taught and percolate to the Universe in its totality',
                         5000,
                     ]}
                     wrapper="span"
