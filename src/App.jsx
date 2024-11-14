@@ -31,8 +31,8 @@ function App() {
         <Route path="/academics/ece" element={<Ece />} />
         <Route path="/academics/it" element={<It />} />
         <Route path="/academics/mca" element={<Mca/>}/>
-        <Route path="/research" element={<ResearchPage/>} />
-        <Route path="/researcher/:id" element={<ResearcherDetails/>} />
+        <Route path="academics/research" element={<ResearchPage/>} />
+        <Route path="researcher/:id" element={<ResearcherDetails/>} />
       </ Routes>
     </div>
 

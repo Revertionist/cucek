@@ -5,27 +5,15 @@ const researchers = [
   {
     name: 'DR. ASALETHA R',
     img: 'https://cucek.cusat.ac.in/images/PIC%20&%20SIGN/GENERAL%20SCIENCE/FACULTY%20PICS/01.jpg',
-    description: 'Blue Meth',
+    description: 'Principal CUCEK',
     id: 'dr-asaletha-r', // Unique ID for routing
   },
   {
     name: 'Dr. SUNILKUMAR N',
     img: 'https://cucek.cusat.ac.in/images/PIC%20&%20SIGN/CE/FACULTY%20PICS/01.jpg',
-    description: 'Soil and Manoj',
+    description: 'HOD Civil',
     id: 'dr-sunilkumar-n',
-  },
-  {
-    name: 'I dunno who dis guy is',
-    img: 'https://cucek.cusat.ac.in/images/PIC%20&%20SIGN/ME/FACULTY%20PICS/03.jpg',
-    description: 'Research on Sustainable Energy',
-    id: 'unknown-guy',
-  },
-  {
-    name: 'Big J',
-    img: 'https://cucek.cusat.ac.in/images/PIC%20&%20SIGN/EEE/FACULTY%20PICS/01.jpg',
-    description: 'Maniamma ass licker',
-    id: 'big-j',
-  },
+  }
 ];
 
 
