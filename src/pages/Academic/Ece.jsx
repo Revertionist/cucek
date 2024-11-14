@@ -7,7 +7,7 @@ export default function Ece() {
     vision: "To be a preeminent center of excellence in the field of electronics and communication engineering by cultivating moral and ethical values while generating globally competent multi-faceted electronics and communication engineers.",
     achievements: "The Division has a good history of campus placements. Our students secured campus placements in multi-national companies viz BOCH, MuSigma, Accenture, TCS, and Infosys etc. Sri UNICE ROSHIN ISMAEL has secured 146th rank in the Indian Civil Service Examination, 2013. Our student Ms Shameena K K of 2010 batch secured ONGC scholarship by securing 1st rank in the IIIrd year B.tech (Electronics and communication)of cochin university of science and technology. Our students have also secured admission in IIT`s ,IIM`s, XLRI & NIT`s for M.Tech / MBA / PGDM etc.",
     association:"Students Association of division “WAVES” is actively organizing seminars, Workshops and other technical events regularly. The association is helpful to the students to acquire knowledge and technical skills through various events and programs. A Robotics club is also functioning under the association. Our students have participated and won prizes in the robotics competitions conducted by IIT, Madras. The Association has also organized a workshop on robotics and many students of our institution actively attended the workshop. The `WAVES` is also offering a helping hand to our students for organizing other co- curricular activities.",
-    hod: "Our Head of Department, Dr. John Doe, is a renowned figure in the field of AI.",
+    hod: "Our Head of Department, Dr Anil Kumar, is a visionary leader taking electronic research to new heights",
   };
 
   return (
