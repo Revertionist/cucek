@@ -7,7 +7,7 @@ export default function Mca() {
     vision: "To impart innovation-oriented education, to build globally competent and socially committed professionals.",
     achievements: "Staff Achievements: MCA HOD , Dr.Preetha Mathew K , has secured PhD in Cryptography from IIT Madras.Students Achievements: Ms. Siji George secured First Rank in the University in Academic year (2006-2009).The top four Rank Holders of the University in the Academic year of 2011-2014 are: 1.Neethu John (First Rank) 2.Preesha Paul (Second Rank) 3.Anjali M (Third Rank) 4.Sheeba S (Fourth Rank) Ms. Aarathi Chandran secured First Rank in the University In Academic year (2012-2015) In every academic year we are achieving 90+ % of results and 75% of placements in the top most IT establishments.",
     association:"SAMCA(Student Association of Master of Computer Applications) takes initiative of all student activities in the department. SAMCA gives emphasis on the curricular and extra-curricular developments of the students. It undertakes activities like organizing seminars, cultural events, IT Fests etc. and conduct special aptitude and soft-skill development training programmes.",
-    hod: "Our Head of Department, Dr. John Doe, is a renowned figure in the field of AI.",
+    hod: "Our Head of Department, Dr. Josephkutty Jacob is a visionary leader and has served as the principal as well.",
   };
 
   return (

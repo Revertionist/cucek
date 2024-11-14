@@ -7,7 +7,7 @@ export default function Cs() {
     vision: "To transform into a top-notch technological and research institution, molding globally competent versatile professionals with creative minds and sound practical expertise, and to construct a future where technology serves humanity by promoting innovation-centric education and cutting-edge research in Computer Science & Engineering.",
     achievements: "The Division has a good history of campus placements. Our students secured campus placements in multi-national companies like BOCH, MuSigma, Accenture, TCS, and Infosys, etc.",
     association: "Students Association of the division \"ACES- Association of Computer Science & Engineering Students\" actively organizes seminars, workshops, and other technical events regularly. The association helps students acquire knowledge and technical skills through various events and programs.",
-    hod: "Our Head of Department, Dr. John Doe, is a renowned figure in the field of AI.",
+    hod: "Our Head of Department, Dr Preetha Mathew is a visionary leader and a pioneer in the field of cryptography",
   };
 
   return (
