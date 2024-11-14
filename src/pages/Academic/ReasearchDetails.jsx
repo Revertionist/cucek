@@ -6,18 +6,18 @@ const researcherData = {
   'dr-asaletha-r': {
     img: 'https://cucek.cusat.ac.in/images/PIC%20&%20SIGN/GENERAL%20SCIENCE/FACULTY%20PICS/01.jpg',
     name: 'DR. ASALETHA R',
-    researchInterests: 'Blue Meth',
-    researchScholars: 'John Doe, Jane Smith',
-    projects: 'Project A, Project B',
-    publications: 'Publication 1, Publication 2',
+    researchInterests: 'NANO POLYMERS',
+    researchScholars: '2 students registered',
+    projects: ',NATIONAL YOUNG SCIENTIST CONTRIBUTIONS',
+    publications: '1 Regional Journal, 3 national journals, 10 international journals',
   },
   'dr-sunilkumar-n': {
     img: 'https://cucek.cusat.ac.in/images/PIC%20&%20SIGN/CE/FACULTY%20PICS/01.jpg',
     name: 'Dr. SUNILKUMAR N',
-    researchInterests: 'Soil and Manoj',
-    researchScholars: 'Alice Johnson, Bob Lee',
-    projects: 'Project X, Project Y',
-    publications: 'Publication A, Publication B',
+    researchInterests: 'COMPUTATIONAL MECHANICS',
+    researchScholars: 'Kiran Christopher, Shiny Paul',
+    projects: '	Submitted Research Proposals of four projects to be funded by the Kerala Government scheme of CUSAT',
+    publications: '2 Regional Journals, 1 national journal, 4 international journals',
   },
   // Add more researchers here as needed
 };
